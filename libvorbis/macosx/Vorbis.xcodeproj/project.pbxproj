@@ -525,10 +525,19 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 730F23F3091827B200AB638C /* Build configuration list for PBXProject "Vorbis" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* vorbis */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				730F23A1091827B100AB638C /* Vorbis */,
 				738835E30B18F870005C7A69 /* libvorbis (static) */,
@@ -705,7 +714,7 @@
 			buildSettings = {
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = __MACOSX__;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 			};
 			name = Debug;
 		};
@@ -723,7 +732,7 @@
 					"-ffast-math",
 					"-falign-loops=16",
 				);
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 			};
 			name = Release;
 		};
@@ -737,7 +746,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					../../ogg/include,
+					../../libogg/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				PREBINDING = NO;
@@ -754,7 +763,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					../../ogg/include,
+					../../libogg/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				PREBINDING = NO;
@@ -811,7 +820,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					../../ogg/include,
+					../../libogg/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				PREBINDING = NO;
@@ -828,7 +837,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					../../ogg/include,
+					../../libogg/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				PREBINDING = NO;
