@@ -56,6 +56,7 @@
 		017FFDD215EE482B00BE0135 /* codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 017FFDCF15EE482B00BE0135 /* codec.h */; };
 		017FFDD315EE482B00BE0135 /* vorbisenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 017FFDD015EE482B00BE0135 /* vorbisenc.h */; };
 		017FFDD415EE482B00BE0135 /* vorbisfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 017FFDD115EE482B00BE0135 /* vorbisfile.h */; };
+		01FE9E3016CC290C002CDB21 /* vorbisenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 017FFD8815EE481100BE0135 /* vorbisenc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -418,6 +419,7 @@
 				017FFDCA15EE481100BE0135 /* tone.c in Sources */,
 				017FFDCC15EE481100BE0135 /* vorbisfile.c in Sources */,
 				017FFDCD15EE481100BE0135 /* window.c in Sources */,
+				01FE9E3016CC290C002CDB21 /* vorbisenc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +447,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -466,6 +469,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
@@ -476,8 +480,12 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				EXECUTABLE_PREFIX = lib;
-				HEADER_SEARCH_PATHS = ../../libogg/include;
+				HEADER_SEARCH_PATHS = (
+					../../libogg/include,
+					"$(SRCROOT)/../lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = macosx10.6;
 			};
 			name = Debug;
@@ -487,8 +495,12 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				EXECUTABLE_PREFIX = lib;
-				HEADER_SEARCH_PATHS = ../../libogg/include;
+				HEADER_SEARCH_PATHS = (
+					../../libogg/include,
+					"$(SRCROOT)/../lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = macosx10.6;
 			};
 			name = Release;
