@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#ogg vorbis is build by making a copy of the macosx xcode project into a folder called ios and then overriding
+#that project to build for ios. The xcode project itself will still compile for normal osx. This script is what
+#makes the ios build work.
+
 #Discover some stuff about where we are.
 START_PATH=$(pwd)
 THIS_FOLDER=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
