@@ -228,6 +228,7 @@ long frameno=0;
 
 /****************************************************************/
 
+#ifdef _V_SELFTEST
 int main(int argc,char *argv[]){
   int eos=0;
   float nonz=0.f;
@@ -522,3 +523,4 @@ int main(int argc,char *argv[]){
   fprintf(stderr,"Done\n\n");
   return 0;
 }
+#endif
