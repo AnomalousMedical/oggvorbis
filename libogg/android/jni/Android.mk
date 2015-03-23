@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
 OGG_INCLUDES    := $(LOCAL_PATH)/../../include
-OGG_SRC		    := /../../src
+OGG_SRC		    := ../../src
 
 include $(CLEAR_VARS)
 
