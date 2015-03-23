@@ -4,7 +4,7 @@ OGG_INCLUDES    := $(LOCAL_PATH)/../../../libogg/include
 VORBIS_INCLUDES := $(LOCAL_PATH)/../../include \
 	               $(LOCAL_PATH)/../../lib
 
-VORBIS_SRC	    := /../../lib
+VORBIS_SRC	    := ../../lib
 
 include $(CLEAR_VARS)
 
