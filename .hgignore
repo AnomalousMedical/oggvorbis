@@ -1,0 +1,5 @@
+syntax: glob
+libogg/android
+libogg/win32
+libvorbis/android
+libvorbis/win32
