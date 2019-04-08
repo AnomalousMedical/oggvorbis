@@ -6,3 +6,5 @@
 /libogg/win32/VS2010/**/x64
 /libvorbis/win32/VS2010/**/Win32
 /libvorbis/win32/VS2010/**/x64
+/libvorbis/android/obj/**/*
+/libogg/android/obj/**/*
