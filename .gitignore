@@ -8,3 +8,5 @@
 /libvorbis/win32/VS2010/**/x64
 /libvorbis/android/obj/**/*
 /libogg/android/obj/**/*
+.vs/
+/**/*/*.vcxproj.user
